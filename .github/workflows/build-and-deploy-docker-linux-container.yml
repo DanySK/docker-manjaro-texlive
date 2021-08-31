@@ -2,8 +2,6 @@ name: Build container image and deploy on dockerhub
 on:
   push:
   pull_request:
-  schedule:
-    - cron: '0 0 * * SAT'
     
 jobs:
   Build-And-Deploy-Container:
