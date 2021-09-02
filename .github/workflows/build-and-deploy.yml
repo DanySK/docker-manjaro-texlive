@@ -28,7 +28,7 @@ jobs:
           echo IMAGE_NAME="$IMAGE_NAME" >> $GITHUB_ENV
       - name: Compute version
         run: |
-          VERSION="$IMAGE_NAME:$(git rev-list --all --count).$(date +%Y%m%d.%H%M)"
+          VERSION="$(git rev-list --all --count).$(date +%Y%m%d.%H%M)"
           echo VERSION="$VERSION"
           echo VERSION="$VERSION" >> $GITHUB_ENV
       - name: Build Image
