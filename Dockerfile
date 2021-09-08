@@ -2,6 +2,7 @@ FROM danysk/docker-manjaro-with-zsh:25.20210905.0811
 RUN yay-install\
     texlive-core\
     texlive-fontsextra\
+    texlive-bibtexextra\
     rubber\
     minted\
     tectonic-bin\
