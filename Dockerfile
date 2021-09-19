@@ -1,4 +1,4 @@
-FROM danysk/docker-manjaro-with-zsh:26.20210912.1258
+FROM danysk/docker-manjaro-with-zsh:27.20210919.0449
 RUN yay-install\
     texlive-core\
     texlive-fontsextra\
