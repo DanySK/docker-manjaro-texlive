@@ -1,12 +1,13 @@
 FROM danysk/docker-manjaro-with-zsh:33.20211003.0940
 RUN yay-install\
+    minted\
+    rubber\
+    ruby\
+    tectonic-bin\
+    texlive-bibtexextra\
     texlive-core\
     texlive-fontsextra\
-    texlive-bibtexextra\
-    rubber\
-    minted\
-    tectonic-bin\
-    ruby
+    texlive-science
 RUN ruby -pi -e "gsub('\$Master = \"\$Master/../..\"', '\$Master = \"\${Master}/../../..\"')" "/usr/share/texmf-dist/scripts/texlive/tlmgr.pl"
 RUN echo -e '#!/bin/sh\n/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode "$@"' > /usr/bin/tlmgr
 RUN chmod +x /usr/bin/tlmgr
