@@ -1,6 +1,7 @@
 FROM danysk/docker-manjaro-with-zsh:33.20211003.0940
 RUN yay-install\
     biber\
+    ghostscript\
     minted\
     rubber\
     ruby\
