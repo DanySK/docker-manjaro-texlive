@@ -9,6 +9,7 @@ RUN yay-install\
     texlive-bibtexextra\
     texlive-core\
     texlive-fontsextra\
+    texlive-pictures\
     texlive-publishers\
     texlive-science
 RUN ruby -pi -e "gsub('\$Master = \"\$Master/../..\"', '\$Master = \"\${Master}/../../..\"')" "/usr/share/texmf-dist/scripts/texlive/tlmgr.pl"
