@@ -15,4 +15,5 @@ RUN echo -e '#!/bin/sh\n/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermod
 RUN chmod +x /usr/bin/tlmgr
 RUN tlmgr init-usertree
 RUN tlmgr option repository https://mirror.ctan.org/systems/texlive/tlnet
+ENV PATH="${PATH}:/usr/bin/vendor_perl/"
 CMD /bin/bash
