@@ -1,4 +1,4 @@
-FROM danysk/docker-manjaro-texlive-base:42.20220206.1157
+FROM danysk/docker-manjaro-texlive-base:43.20220213.1200
 RUN yay-install tectonic-bin
 RUN yay-install texlive-bin texlive-most texlive-lang texlive-science texlive-pictures
 RUN yay-install man-db
