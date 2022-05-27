@@ -2,6 +2,7 @@ FROM danysk/docker-manjaro-with-zsh:77.20220522.1245
 RUN yay-install\
     biber\
     ghostscript\
+    graphviz\
     minted\
     rubber\
     ruby\
