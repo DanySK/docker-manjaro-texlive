@@ -1,4 +1,4 @@
-FROM danysk/docker-manjaro-with-zsh:111.20221211.0850
+FROM danysk/docker-manjaro-with-zsh:112.20221213.0538
 RUN yay-install\
     biber\
     ghostscript\
