@@ -8,7 +8,7 @@ on:
   pull_request:
     
 jobs:
-  Build-And-Deploy-Container:
+  success:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
