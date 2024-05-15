@@ -9,17 +9,7 @@ RUN pamac install --no-confirm\
     rubber\
     ruby\
     tectonic\
-    texlive\
-    texlive-bibtexextra\
-    texlive-core\
-    texlive-fontsextra\
-    texlive-lang\
-    texlive-luatex\
-    texlive-mathscience\
-    texlive-pictures\
-    texlive-publishers\
-    texlive-science\
-    texlive-xetex
+    texlive*
 RUN paccache -rk 0
 RUN pamac clean -b
 #RUN ruby -pi -e "gsub('\$Master = \"\$Master/../..\"', '\$Master = \"\${Master}/../../..\"')" "/usr/share/texmf-dist/scripts/texlive/tlmgr.pl"
