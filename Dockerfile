@@ -1,4 +1,4 @@
-FROM danysk/docker-manjaro-texlive-base:214.20240622.1403
+FROM danysk/docker-manjaro-texlive-base:215.20240625.0847
 RUN pamac update --no-confirm
 RUN pamac upgrade --no-confirm
 RUN pamac install --no-confirm texlive* tectonic man-db git-latexdiff
