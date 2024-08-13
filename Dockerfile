@@ -1,4 +1,4 @@
-FROM danysk/docker-manjaro-with-zsh:277.20240805.1415
+FROM danysk/docker-manjaro-with-zsh:278.20240810.0809
 RUN pamac update --no-confirm
 RUN pamac upgrade --no-confirm
 RUN pamac install --no-confirm\
