@@ -11,6 +11,8 @@ RUN paru -Sy\
     $(paru -Ssq 'texlive-*')\
     --noconfirm
 RUN paru -Sccd --noconfirm
+USER root
+RUN paccache -rk 0
 #RUN ruby -pi -e "gsub('\$Master = \"\$Master/../..\"', '\$Master = \"\${Master}/../../..\"')" "/usr/share/texmf-dist/scripts/texlive/tlmgr.pl"
 #RUN echo -e '#!/bin/sh\n/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode "$@"' > /usr/bin/tlmgr
 #RUN chmod +x /usr/bin/tlmgr
