@@ -1,7 +1,6 @@
-FROM danysk/docker-manjaro-with-zsh:287.20240927.0816
-RUN pamac update --no-confirm
-RUN pamac upgrade --no-confirm
-RUN pamac install --no-confirm\
+FROM danysk/manjaro-with-zsh:294.20241001.1533
+USER build
+RUN paru -Sy\
     biber\
     ghostscript\
     graphviz\
@@ -9,9 +8,9 @@ RUN pamac install --no-confirm\
     rubber\
     ruby\
     tectonic\
-    texlive*
-RUN paccache -rk 0
-RUN pamac clean -b
+    $(paru -Ssq 'texlive-*')\
+    --noconfirm
+RUN paru -Sccd --noconfirm
 #RUN ruby -pi -e "gsub('\$Master = \"\$Master/../..\"', '\$Master = \"\${Master}/../../..\"')" "/usr/share/texmf-dist/scripts/texlive/tlmgr.pl"
 #RUN echo -e '#!/bin/sh\n/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode "$@"' > /usr/bin/tlmgr
 #RUN chmod +x /usr/bin/tlmgr
