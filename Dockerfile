@@ -4,7 +4,6 @@ RUN paru -Sy\
     biber\
     ghostscript\
     graphviz\
-    minted\
     rubber\
     ruby\
     tectonic\
