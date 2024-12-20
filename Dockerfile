@@ -4,6 +4,7 @@ RUN paru -Sy\
     biber\
     ghostscript\
     graphviz\
+    python-pygments\
     rubber\
     tectonic\
     $(paru -Ssq 'texlive-*')\
