@@ -5,7 +5,6 @@ RUN paru -Sy\
     ghostscript\
     graphviz\
     rubber\
-    ruby\
     tectonic\
     $(paru -Ssq 'texlive-*')\
     --noconfirm
