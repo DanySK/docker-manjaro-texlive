@@ -1,4 +1,4 @@
-FROM danysk/manjaro-with-zsh:331.20250729.1609
+FROM danysk/manjaro-with-zsh:332.20250729.1719
 USER build
 RUN paru -Sy\
     biber\
