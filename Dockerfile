@@ -7,6 +7,7 @@ RUN paru -Sy\
     python-pygments\
     rubber\
     tectonic\
+    which\
     $(paru -Ssq 'texlive-*')\
     --noconfirm
 RUN paru -Sccd --noconfirm
