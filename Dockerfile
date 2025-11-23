@@ -1,4 +1,4 @@
-FROM danysk/manjaro-with-zsh:338.20250826.0113 as base
+FROM danysk/manjaro-with-zsh:339.20251120.1802 as base
 USER build
 RUN paru -Sy\
     biber\
@@ -15,7 +15,7 @@ USER root
 RUN paccache -rk 0
 RUN rm -rf /var/cache
 
-FROM danysk/manjaro-with-zsh:338.20250826.0113
+FROM danysk/manjaro-with-zsh:339.20251120.1802
 COPY --from=base /etc /etc
 COPY --from=base /usr /usr
 COPY --from=base /var /var
