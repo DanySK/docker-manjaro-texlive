@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Maximize build space
-        uses: AdityaGarg8/remove-unwanted-software@v4.1
+        uses: AdityaGarg8/remove-unwanted-software@v5
         with:
           remove-cached-tools: 'true'
           remove-codeql: 'true'
